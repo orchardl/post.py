@@ -52,7 +52,7 @@ def worker(num):
 
 threads = []
 
-for i in range(50):
+for i in range(5):
     thread = threading.Thread(target=worker, args=(i,))
     threads.append(thread)
     thread.start()
